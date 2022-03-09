@@ -1,4 +1,4 @@
-package com.frame;
+package com.frame.bean;
 
 import java.util.Date;
 
