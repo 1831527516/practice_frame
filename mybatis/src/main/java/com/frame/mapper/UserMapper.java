@@ -13,4 +13,11 @@ public interface UserMapper {
      * @return
      */
     List<User> findAll();
+
+    /**
+     * 添加用户
+     * @param user
+     * @return
+     */
+    Integer addUser(User user);
 }

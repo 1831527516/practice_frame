@@ -7,4 +7,7 @@
     <select id="findAll" resultType ="com.frame.bean.User">
         select * from user;
     </select>
+    <insert id="addUser" parameterType="com.frame.bean.User" >
+        insert
+    </insert>
 </mapper>
