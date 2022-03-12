@@ -20,4 +20,11 @@ public interface UserMapper {
      * @return
      */
     Integer addUser(User user);
+
+    /**
+     * 修改
+     * @param user
+     * @return
+     */
+    Integer updateUser(User user);
 }
