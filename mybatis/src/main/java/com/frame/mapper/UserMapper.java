@@ -27,4 +27,12 @@ public interface UserMapper {
      * @return
      */
     Integer updateUser(User user);
+
+    /**
+     * 删除
+     * @param id
+     * @return
+     */
+
+    Integer deleteUserId(Integer id);
 }

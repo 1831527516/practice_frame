@@ -29,15 +29,27 @@ public class MyBatisTest {
         // 5.使用代理对象执行方法
         //findAll(userMapper);
         //addUser(session, userMapper);
+        //updateUser(session, userMapper);
+        //deleteUserId(session, userMapper);
+
+        // 6.释放资源
+        session.close();
+        inputStream.close();
+    }
+
+    private static void deleteUserId(SqlSession session, UserMapper userMapper) {
+        Integer integer = userMapper.deleteUserId(5);
+        System.out.println(integer);
+        session.commit();
+    }
+
+    private static void updateUser(SqlSession session, UserMapper userMapper) {
         User user = new User();
         user.setSex("女");
         user.setId(4);
         Integer updateUser = userMapper.updateUser(user);
         System.out.println(updateUser);
         session.commit();
-        // 6.释放资源
-        session.close();
-        inputStream.close();
     }
 
     private static void addUser(SqlSession session, UserMapper userMapper) throws ParseException {

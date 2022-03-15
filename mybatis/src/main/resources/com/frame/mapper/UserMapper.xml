@@ -32,4 +32,8 @@
                 </if>
             </trim>
     </update>
+
+    <delete id="deleteUserId"  parameterType="java.lang.Integer">
+        delete from user where id=#{value }
+    </delete>
 </mapper>
